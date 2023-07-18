@@ -19,6 +19,12 @@ a{
 .box{
     background-color: black;
 }
+.logo{
+    width: 170px;
+    height: 41px;
+    background-size: 170px 41px;
+    background-image: url("./Images/Logo.svg");    
+}
 .nav{
     width: 1280px;
     height: 99px;
@@ -76,6 +82,59 @@ a{
     scale: 1.05;
     transition: 300ms;
 }
+.window{
+    display: none;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    border: 1px solid;
+    background-image: url("/Images/icon.png");
+    display: none;
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width:400px){
+    .container{
+        width: 375px;
+        padding: 0;
+    }
+    .btn:hover{
+        scale: 1;
+    }
+    .btn:active{
+        scale: 1.10;
+
+    }
+    .nav{
+        width: 339px;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }   
+    .links,.btns{
+        display: none;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+        margin-top: 24px;
+        margin-left: 18px;
+        background-image: url("/Images/Vector.svg");
+    }
+    .menu{
+        width: 24px;
+        height: 24px;
+        margin-top: 32px;
+        display: block;
+    }
+}
+
 .hero{
     width: 1280px;
     height: 801px;
@@ -170,6 +229,63 @@ a{
     color: white;
     font-family: "Inter";
 }
+
+@media only screen and (max-width:400px){
+    .hero{
+        width: 375px;
+        height: 724px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .text{
+        width: 340px;
+        height: 256px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .h1{
+        font-size: 36px;
+    }
+    .p{
+        font-size: 14px;
+        width: 286px;
+    }
+    .btn-arrow{
+        width: 139px;
+        height: 42px;
+        margin: 0;
+    }
+    .btn-arrow img {
+        display: none;
+    }
+    .rotate{
+        margin: 0;
+        width: 304px;
+        height: 308px;
+        display: flex;
+        flex-direction: column;
+    }
+    .rotated{
+        width: 291px;
+        height: 61px;
+    }
+    .trends:nth-child(1){
+        margin: 0;
+    }
+    .trends:nth-child(2){
+        margin: 0;
+    }
+    .trends:nth-child(3){
+        margin: 0;
+    }
+    .trends:nth-child(4){
+        margin: 0;
+    }
+}
 /*                       BODY  
 SECTION SHIT */
 .shit{
@@ -216,6 +332,50 @@ SECTION SHIT */
     font-size: 18px;
     color: black;
 }
+@media only screen and ( max-width:400px){
+    .shit{
+        width: 375px;
+        height: 541px;
+    }
+    .sh-box{
+        width: 347px;
+        height: 381px;
+    }
+    .h2{
+        width: 347px;
+        font-size: 32px;
+    }
+    .elon{
+        width: 342px;
+        height: 231px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .true-elon{
+        width: 339px;
+        height: 138px;
+
+    }
+    .need{
+        content: url("/Images/Group\ 427321658.png");
+        width: 99px;
+        height: 67px;
+        margin-left: 221px;
+    }
+    .solution{
+        content: url("/Images/Group\ 427321661.png");
+        width: 93px;
+        height: 64px;
+        margin-right: 221px;
+    }
+    .sh-p{
+        font-size: 14px;
+        width: 286px;
+        text-align: center;
+    }
+}
+
 /* SECTION 2  */
 .memory{
     height: 584px;
@@ -240,7 +400,23 @@ SECTION SHIT */
     color: #ADADAD;
 }
 
-
+@media only screen and (max-width:400px){
+    .memory{
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .memory-text{
+        width: 335px;
+        height: 387px;
+    }
+    .memory-h3{
+        width: 335px;
+        height: 387px;
+        font-size: 34px;
+    }
+}
 /* section 3 */
 .startup{
     display: flex;
@@ -286,7 +462,52 @@ SECTION SHIT */
 }
 
 
+@media only screen and (max-width:400px){
+    .startup{
+        margin-top: 160px;
+    }
+    .startup-box{
+        width: 337px;
+        height: 808px;
+    }
+    .startup-h3{
+        font-size: 34px;
+    }
+    .list-box{
+        width: 339px;
+        height: 690px;
+        row-gap: 12px;
+    }
+    .startup-list{
+        width: 339px;
+        height: 162px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .startup-idea{
+        width: 162px;
+        height: 74px;
+    }
+    .startup-img:nth-child(1){
+        width: 115px;
+        height: 24px;
 
+    }
+    .startup-img:nth-child(2){
+        width: 95px;
+        height: 24px;
+    }
+    .startup-img:nth-child(3){
+        width: 88px;
+        height: 26px;
+    }
+    .startup-img:nth-child(4){
+        width: 105px;
+        height: 14px;
+    }   
+}
 
 .tweet{
     height: 2202px;
@@ -345,6 +566,58 @@ SECTION SHIT */
     font-family: "Roboto";
 }
 
+@media only screen and (max-width:400px){
+    .tweet{
+        width: 375px;
+        height: 982px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .tweet-h3{
+        font-size: 34px;
+        text-align: center;
+    }
+    .tweet-list{
+        width: 304px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .platforms{
+        width: 64px;
+        height: 64px;
+
+    }
+    .platforms img {
+        width: 31px;
+        height:  31px;
+    }
+    .tweet-elon{
+        width: 339px;
+        height: 684px;
+    }
+    .tweet-tweets1{
+        width: 339px;
+        height: 116px;
+    }
+    .tweet-tweets2{
+        width: 339px;
+        height: 344px;
+    }
+    .tweet-tweets3{
+        width: 339px;
+        height: 116px;
+    }
+    .tweet-btn{
+        width: 152px;
+        height: 44px;
+        font-size: 14px;
+    }
+}
 
 .switch-btn {
     display: inline-block;
@@ -500,6 +773,61 @@ SECTION SHIT */
     background-color: #A8FF35;
 }
 
+@media screen and (max-width:400px){
+    .deal{
+        height: 2213px;
+        margin-top: 80px;
+    }
+    .deal-h3{
+        font-size: 34px;
+    }
+    .deal-info{
+        width: 277px;
+        height: 106px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 32px 41px;
+    }
+    .deal-info img {
+        width: 63px;
+        height: 66px;
+        content: url("/Images/2828.png");
+        margin-left: 200px;
+    }
+    .deal-list{
+        width: 339px;
+        height: 1854px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 18px;
+    }
+    .deal-item{
+        width: 339px;
+        height: 602px;
+        padding: 30;
+    }
+    .deal-h4{
+        font-size: 30px;
+    }
+    
+    .advantages{
+        width: 280px;
+        height: 460px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .money{
+        font-size: 60px;
+    }
+    .deal-btn{
+        width: 278px;
+        height: 54px;
+    }
+}
+
 .email{
     height: 539px;
     display: flex;
@@ -533,7 +861,29 @@ SECTION SHIT */
     background-color: #000000;
 }
 
+@media only screen and (max-width:400px){
+    .email{
+        height: 316px;
 
+    }
+    .email-text{
+        width: 340px;
+        height: 170px;
+
+    }
+    .email-h3{
+        font-size: 32px;
+        width: 340px;
+        height: 80px;
+    }
+    .email-btn{
+        width: 106px;
+        height: 44px;
+        font-size: 14px;
+        
+        
+    }
+}
 .footer{
     height: 100px;
     padding-top: 30px;
@@ -557,4 +907,33 @@ SECTION SHIT */
     font-size: 18px;
     color: #000000;
     font-family: "Roboto";
+}
+@media only screen and (max-width:400px){
+    .footer{
+        height:  473px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        border: 1px solid;
+    }
+    .footer-nav{
+        width: 170px;
+        height: 313px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .footer-links{
+        width: 180px;
+        height: 192px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .footer-links a{
+        font-size: 18px;
+    }
 }
